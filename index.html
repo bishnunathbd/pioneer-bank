@@ -21,12 +21,17 @@
             <button id="login-btn" class="btn btn-success">Submit</button>
         </div>
     </div>
+    <div id="transaction-area">
+        <h1>Transaction Area</h1>
+    </div>
 
     <script>
         const loginBtn = document.getElementById('login-btn');
         loginBtn.addEventListener('click', function () {
             const loginArea = document.getElementById('login-area');
             loginArea.style.display = 'none';
+            const transactionArea = document.getElementById('transaction-area');
+            transactionArea.style.display = 'block';
         })
     </script>
 </body>
