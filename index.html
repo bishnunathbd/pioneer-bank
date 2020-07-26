@@ -18,7 +18,7 @@
             <br>
             <input class="form-control" type="password" name="" id="" placeholder="Password">
             <br>
-            <button id="login-btn" class="btn btn-success">Submit</button>
+            <button id="submit-btn" class="btn btn-success">Submit</button>
         </div>
     </div>
     <div id="transaction-area">
@@ -42,11 +42,29 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Deposit</h4>
+                    <input type="text" class="form-control" placeholder="$ amount you want to deposit">
+                    <br>
+                    <button class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Withdraw</h4>
+                    <input type="text" class="form-control" placeholder="$ amount you want to withdraw">
+                    <br>
+                    <button class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
-        const loginBtn = document.getElementById('login-btn');
-        loginBtn.addEventListener('click', function () {
+        const submitBtn = document.getElementById('submit-btn');
+        submitBtn.addEventListener('click', function () {
             const loginArea = document.getElementById('login-area');
             loginArea.style.display = 'none';
             const transactionArea = document.getElementById('transaction-area');
